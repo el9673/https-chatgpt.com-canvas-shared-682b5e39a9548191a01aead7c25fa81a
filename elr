@@ -1,0 +1,11 @@
+import React, { useState, useEffect } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { LucideIcon } from "lucide-react";
+
+const Overlay = () => {
+  const [screen, setScreen] = useState("starting");
+
+  useEffect(() => {
+    const twitchAlerts = new EventSource...
